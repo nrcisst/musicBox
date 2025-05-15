@@ -4,14 +4,27 @@
 //
 //  Created by Biniam Habte on 5/1/25.
 //
-
+import Foundation
 import SwiftUI
 
 @main
 struct miniAudibleApp: App {
+    @StateObject private var viewModel = BookViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Color(.systemBackground).ignoresSafeArea()
+                
+                ContentView().environmentObject(viewModel)
+            }
+            .preferredColorScheme(.dark)
         }
     }
+}
+
+#Preview {
+    ContentView()
+        .environmentObject(BookViewModel())
+        .preferredColorScheme(.dark)
 }
