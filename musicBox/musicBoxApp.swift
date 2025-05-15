@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 
 @main
-struct miniAudibleApp: App {
+struct musicBoxApp: App {
     @StateObject private var viewModel = BookViewModel()
     
     var body: some Scene {

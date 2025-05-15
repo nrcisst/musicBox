@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class miniAudibleUITestsLaunchTests: XCTestCase {
+final class musicBoxUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -29,25 +29,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79C9E3742DC46511004C0904 /* miniAudible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniAudible.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C9E3812DC46513004C0904 /* miniAudibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniAudibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C9E38B2DC46513004C0904 /* miniAudibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniAudibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C9E3742DC46511004C0904 /* musicBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C9E3812DC46513004C0904 /* musicBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C9E38B2DC46513004C0904 /* musicBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		79C9E3762DC46511004C0904 /* miniAudible */ = {
+		79C9E3762DC46511004C0904 /* musicBox */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniAudible;
+			path = musicBox;
 			sourceTree = "<group>";
 		};
-		79C9E3842DC46513004C0904 /* miniAudibleTests */ = {
+		79C9E3842DC46513004C0904 /* musicBoxTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniAudibleTests;
+			path = musicBoxTests;
 			sourceTree = "<group>";
 		};
-		79C9E38E2DC46513004C0904 /* miniAudibleUITests */ = {
+		79C9E38E2DC46513004C0904 /* musicBoxUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniAudibleUITests;
+			path = musicBoxUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -82,9 +82,9 @@
 		79C9E36B2DC46511004C0904 = {
 			isa = PBXGroup;
 			children = (
-				79C9E3762DC46511004C0904 /* miniAudible */,
-				79C9E3842DC46513004C0904 /* miniAudibleTests */,
-				79C9E38E2DC46513004C0904 /* miniAudibleUITests */,
+				79C9E3762DC46511004C0904 /* musicBox */,
+				79C9E3842DC46513004C0904 /* musicBoxTests */,
+				79C9E38E2DC46513004C0904 /* musicBoxUITests */,
 				79C9E3752DC46511004C0904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 		79C9E3752DC46511004C0904 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79C9E3742DC46511004C0904 /* miniAudible.app */,
-				79C9E3812DC46513004C0904 /* miniAudibleTests.xctest */,
-				79C9E38B2DC46513004C0904 /* miniAudibleUITests.xctest */,
+				79C9E3742DC46511004C0904 /* musicBox.app */,
+				79C9E3812DC46513004C0904 /* musicBoxTests.xctest */,
+				79C9E38B2DC46513004C0904 /* musicBoxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79C9E3732DC46511004C0904 /* miniAudible */ = {
+		79C9E3732DC46511004C0904 /* musicBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C9E3952DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudible" */;
+			buildConfigurationList = 79C9E3952DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBox" */;
 			buildPhases = (
 				79C9E3702DC46511004C0904 /* Sources */,
 				79C9E3712DC46511004C0904 /* Frameworks */,
@@ -115,20 +115,20 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				79C9E3762DC46511004C0904 /* miniAudible */,
+				79C9E3762DC46511004C0904 /* musicBox */,
 			);
-			name = miniAudible;
+			name = musicBox;
 			packageProductDependencies = (
 				79C9E4542DD14266004C0904 /* SDWebImageSwiftUI */,
 				79C9E4A32DD2C8C0004C0904 /* Kingfisher */,
 			);
 			productName = miniAudible;
-			productReference = 79C9E3742DC46511004C0904 /* miniAudible.app */;
+			productReference = 79C9E3742DC46511004C0904 /* musicBox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		79C9E3802DC46513004C0904 /* miniAudibleTests */ = {
+		79C9E3802DC46513004C0904 /* musicBoxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C9E3982DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudibleTests" */;
+			buildConfigurationList = 79C9E3982DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBoxTests" */;
 			buildPhases = (
 				79C9E37D2DC46513004C0904 /* Sources */,
 				79C9E37E2DC46513004C0904 /* Frameworks */,
@@ -140,18 +140,18 @@
 				79C9E3832DC46513004C0904 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				79C9E3842DC46513004C0904 /* miniAudibleTests */,
+				79C9E3842DC46513004C0904 /* musicBoxTests */,
 			);
-			name = miniAudibleTests;
+			name = musicBoxTests;
 			packageProductDependencies = (
 			);
 			productName = miniAudibleTests;
-			productReference = 79C9E3812DC46513004C0904 /* miniAudibleTests.xctest */;
+			productReference = 79C9E3812DC46513004C0904 /* musicBoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		79C9E38A2DC46513004C0904 /* miniAudibleUITests */ = {
+		79C9E38A2DC46513004C0904 /* musicBoxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C9E39B2DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudibleUITests" */;
+			buildConfigurationList = 79C9E39B2DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBoxUITests" */;
 			buildPhases = (
 				79C9E3872DC46513004C0904 /* Sources */,
 				79C9E3882DC46513004C0904 /* Frameworks */,
@@ -163,13 +163,13 @@
 				79C9E38D2DC46513004C0904 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				79C9E38E2DC46513004C0904 /* miniAudibleUITests */,
+				79C9E38E2DC46513004C0904 /* musicBoxUITests */,
 			);
-			name = miniAudibleUITests;
+			name = musicBoxUITests;
 			packageProductDependencies = (
 			);
 			productName = miniAudibleUITests;
-			productReference = 79C9E38B2DC46513004C0904 /* miniAudibleUITests.xctest */;
+			productReference = 79C9E38B2DC46513004C0904 /* musicBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79C9E36F2DC46511004C0904 /* Build configuration list for PBXProject "miniAudible" */;
+			buildConfigurationList = 79C9E36F2DC46511004C0904 /* Build configuration list for PBXProject "musicBox" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79C9E3732DC46511004C0904 /* miniAudible */,
-				79C9E3802DC46513004C0904 /* miniAudibleTests */,
-				79C9E38A2DC46513004C0904 /* miniAudibleUITests */,
+				79C9E3732DC46511004C0904 /* musicBox */,
+				79C9E3802DC46513004C0904 /* musicBoxTests */,
+				79C9E38A2DC46513004C0904 /* musicBoxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		79C9E3832DC46513004C0904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79C9E3732DC46511004C0904 /* miniAudible */;
+			target = 79C9E3732DC46511004C0904 /* musicBox */;
 			targetProxy = 79C9E3822DC46513004C0904 /* PBXContainerItemProxy */;
 		};
 		79C9E38D2DC46513004C0904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79C9E3732DC46511004C0904 /* miniAudible */;
+			target = 79C9E3732DC46511004C0904 /* musicBox */;
 			targetProxy = 79C9E38C2DC46513004C0904 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.biniam.miniAudible;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biniam.musicBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.biniam.miniAudible;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biniam.musicBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -469,7 +469,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniAudible.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/miniAudible";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/musicBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/musicBox";
 			};
 			name = Debug;
 		};
@@ -487,7 +487,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniAudible.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/miniAudible";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/musicBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/musicBox";
 			};
 			name = Release;
 		};
@@ -526,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79C9E36F2DC46511004C0904 /* Build configuration list for PBXProject "miniAudible" */ = {
+		79C9E36F2DC46511004C0904 /* Build configuration list for PBXProject "musicBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C9E3932DC46513004C0904 /* Debug */,
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79C9E3952DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudible" */ = {
+		79C9E3952DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C9E3962DC46513004C0904 /* Debug */,
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79C9E3982DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudibleTests" */ = {
+		79C9E3982DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBoxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C9E3992DC46513004C0904 /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79C9E39B2DC46513004C0904 /* Build configuration list for PBXNativeTarget "miniAudibleUITests" */ = {
+		79C9E39B2DC46513004C0904 /* Build configuration list for PBXNativeTarget "musicBoxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C9E39C2DC46513004C0904 /* Debug */,
