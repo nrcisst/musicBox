@@ -10,13 +10,17 @@ import SwiftUI
 @main
 struct musicBoxApp: App {
     @StateObject private var viewModel = BookViewModel()
+    @StateObject private var audioMgr = AudioManager.shared
+
     
     var body: some Scene {
         WindowGroup {
             ZStack {
                 Color(.systemBackground).ignoresSafeArea()
                 
-                ContentView().environmentObject(viewModel)
+                ContentView()
+                    .environmentObject(viewModel)
+                    .environmentObject(audioMgr)
             }
             .preferredColorScheme(.dark)
         }
@@ -26,5 +30,7 @@ struct musicBoxApp: App {
 #Preview {
     ContentView()
         .environmentObject(BookViewModel())
+        .environmentObject(AudioManager.shared)
+
         .preferredColorScheme(.dark)
 }

@@ -26,43 +26,7 @@ class BookViewModel: ObservableObject {
     
     
     func loadBooks() {
-        let mockData = [
-            Book(
-                bookID: 1546163603,
-                title: "WLR",
-                artist: "Playboi Carti",
-                releaseYear: 2020,
-                durationMinutes: 90,
-                assetName: "wlr",
-                coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ba/1e/05/ba1e058e-5637-e53c-563c-f5b9a1a6c344/20UM1IM18331.rgb.jpg/600x600bb.jpg")),
-            Book(
-                bookID: 98,
-                title: "Blonde",
-                artist: "Frank Ocean",
-                releaseYear: 2016,
-                durationMinutes: 60,
-                assetName: "blonde",
-                coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg")),
-            Book(
-                bookID: 44,
-                title: "PARTYNEXTDOOR",
-                artist: "PartyNextDoor",
-                releaseYear: 2012,
-                durationMinutes: 40,
-                assetName: "pnd",
-                coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/8b/ac/b2/8bacb2b9-0ff0-ac65-bbe2-58baef5abfcb/27496.jpg/600x600bb.jpg")),
-            Book(
-                bookID: 69,
-                title: "Barter 6",
-                artist: "Young Thug",
-                releaseYear: 2015,
-                durationMinutes: 90,
-                assetName: "barter",
-                coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7f/ab/ba/7fabbae7-d92a-f59e-352b-7b9d1e960feb/075679924872.jpg/600x600bb.jpg")),
-                
-        ]
-        
-        self.books = mockData
+        self.books = []
     }
     
     func addBookReview(newBook: Book){
@@ -79,7 +43,7 @@ class BookViewModel: ObservableObject {
             print("Failed to encode")
             return}
         
-        guard let searchURL = URL(string:"https://itunes.apple.com/search?term=\(query)&entity=album&limit=100") else{
+        guard let searchURL = URL(string:"https://itunes.apple.com/search?term=\(query)&entity=album&limit=200") else{
             print("Invalid URL")
             return
         }

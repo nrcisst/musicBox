@@ -16,5 +16,6 @@ struct Book: Identifiable {
     let durationMinutes: Int
     let assetName: String
     let coverURL: URL?
+    var reviewURL: URL?
     let progressInMinutes: Double = 0.0
 }

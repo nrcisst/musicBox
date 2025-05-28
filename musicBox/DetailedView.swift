@@ -10,7 +10,9 @@ import Kingfisher
 
 
 struct DetailedView: View {
+    @StateObject private var audioMgr = AudioManager.shared
     @EnvironmentObject var viewModel: BookViewModel
+
     
     let book: Book
     var body: some View {
@@ -25,7 +27,7 @@ struct DetailedView: View {
             .ignoresSafeArea()
             
             ScrollView {
-                VStack(alignment: .leading, spacing: 15) {
+                VStack(alignment: .center, spacing: 15) {
                     KFImage(book.coverURL)
                         .placeholder { ProgressView() }
                         .resizable()
@@ -46,28 +48,42 @@ struct DetailedView: View {
                         .bold()
                         .padding(.bottom, 35)
                     if viewModel.books.contains(where: {$0.bookID == book.bookID}){
-                        HStack(spacing: 25){
-                            Button{
-                                viewModel.removeBookReview(book)
-                            } label: {
-                                Text("Remove review")
-                                    .foregroundStyle(.red)
-                                    .background(Color.clear)
-                                    .clipShape(Capsule())
-                                    .monospaced()
-                                    .bold()
-                                    .padding(.horizontal, 20)
-                                    .padding(.vertical, 20)
-                                    .overlay(
-                                        Capsule()
-                                            .stroke(Color.red, lineWidth: 0.75)
-                                    )
-                                    .offset(x: 3)
-                            }
+                        HStack{
+                                NavigationLink{
+                                    PlayView(book: book)
+                                }label: {
+                                    Text("Play review")
+                                        .foregroundStyle(.indigo)
+                                        .clipShape(Capsule())
+                                        .monospaced()
+                                        .bold()
+                                        .padding(.horizontal, 20)
+                                        .padding(.vertical, 20)
+                                        .overlay(
+                                            Capsule()
+                                                .stroke(Color.indigo, lineWidth: 0.75)
+                                        )
+                                }
+                                Button{
+                                    viewModel.removeBookReview(book)
+                                } label: {
+                                    Text("Remove review")
+                                        .foregroundStyle(.red)
+                                        .clipShape(Capsule())
+                                        .monospaced()
+                                        .bold()
+                                        .padding(.horizontal, 20)
+                                        .padding(.vertical, 20)
+                                        .overlay(
+                                            Capsule()
+                                                .stroke(Color.red, lineWidth: 0.75)
+                                        )
+                                }
                         }
+                        
                     }else {
-                        Button{
-                            viewModel.addBookReview(newBook: book)
+                        NavigationLink{
+                            RecordView(book: book)
                         } label: {
                             Text("Add review")
                                 .foregroundStyle(.white)
@@ -85,6 +101,7 @@ struct DetailedView: View {
                         }
                     }
                 }
+                .frame(maxWidth: .infinity)
             }
         }
     }
@@ -98,7 +115,9 @@ struct DetailedView: View {
         releaseYear: 2020,
         durationMinutes: 90,
         assetName: "wlr",
-        coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ba/1e/05/ba1e058e-5637-e53c-563c-f5b9a1a6c344/20UM1IM18331.rgb.jpg/400x400bb.jpg")))
+        coverURL: URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ba/1e/05/ba1e058e-5637-e53c-563c-f5b9a1a6c344/20UM1IM18331.rgb.jpg/400x400bb.jpg")
+    ))
+    
                  
     .environmentObject(BookViewModel())
     .preferredColorScheme(.dark)

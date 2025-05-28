@@ -23,7 +23,6 @@ struct LibraryView: View {
             .ignoresSafeArea()
             
             List {
-                // 1️⃣ Put the header in its own Section (or as a List header)
                 Text("Library")
                     .font(.largeTitle)
                     .bold()
@@ -32,7 +31,6 @@ struct LibraryView: View {
                     .padding(.vertical, 20)
                     .listRowBackground(Color.clear)
                 
-                    // 2️⃣ Now each book is its own row
                     ForEach(viewModel.books) { book in
                         NavigationLink {
                             DetailedView(book: book)

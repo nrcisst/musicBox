@@ -34,9 +34,22 @@
 		79C9E38B2DC46513004C0904 /* musicBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		79C9E5E32DD92D6B004C0904 /* Exceptions for "musicBox" folder in "musicBox" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 79C9E3732DC46511004C0904 /* musicBox */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		79C9E3762DC46511004C0904 /* musicBox */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				79C9E5E32DD92D6B004C0904 /* Exceptions for "musicBox" folder in "musicBox" target */,
+			);
 			path = musicBox;
 			sourceTree = "<group>";
 		};
@@ -410,6 +423,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = musicBox/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to record audio so you can leave voice reviews";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +452,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = musicBox/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to record audio so you can leave voice reviews";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
